@@ -1,1 +1,156 @@
-/* Add styles here */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+/* Bodys de ambas páginas */
+#paginaInicio {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(219, 219, 219);
+  background: url("Imagenes/FondoInicio.png") no-repeat center center/cover;
+  flex-direction: column; 
+}
+
+#paginaConsultas{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: hsl(0, 0%, 100%);
+  background: url("Imagenes/FondoConsultas.png") no-repeat center center/cover;
+  flex-direction: column; 
+}
+/* Contenedores de los formularios de ambas páginas */
+#contenedorInicio{
+  background: rgba(0, 0, 0, 0.6);
+  padding: 30px;
+  text-align: center;
+  width: 600px;
+  color: rgb(255, 255, 255);
+}
+
+#contenedorConsultas{
+  margin-top: 20px;
+  width: 650px;
+  position: absolute; 
+  top: 0;
+}
+.h1Inicio {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+/* Texto */
+.campo {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.campo label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.campo input, 
+.campo textarea {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+textarea {
+  height: 120px;
+  resize: none;
+}
+
+/* Botones */
+.botonPrimario {
+  margin-top: 15px;
+  background: #4d6935;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.botonPrimario:hover {
+  background: #3b5127;
+}
+
+.botonSecundario {
+  background: #4a0075;
+  color: white;
+  border: none;
+  padding: 10px 25px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.botonSecundario:hover {
+  background: #390049;
+}
+
+.botonTerciario {
+  background: #4a0075;
+  color: white;
+  border: none;
+  padding: 10px 25px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.botonTerciario:hover {
+  background: #390049;
+}
+
+/* Cajas que contienen a los botones */
+#irConsultas {
+ position: absolute; 
+ top: 0;
+ left: 0;
+ margin-bottom: 40px;
+ padding: 12px 25px;
+}
+
+#volverConsultas {
+  position: absolute; 
+  bottom: 0;
+  right: 0;
+  margin-bottom: 40px;
+  padding: 12px 25px;
+ }
+
+/* General de la página de publicaciones */
+#tituloConsultas{
+  padding: 20px 100px;
+  background: rgba(28, 0, 54, 0.466);
+  text-align: center;
+  margin-bottom: 30px; 
+}
+
+.h2Consultas{
+ color: #ffffff;
+}
+
+.consulta {
+  background: rgba(0, 0, 0, 0.541);
+  padding: 15px;
+  margin-bottom: 15px;
+
+}
+
+.consulta strong {
+  color: #377e21;
+}
+
