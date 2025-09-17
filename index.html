@@ -1,14 +1,30 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Hello World</title>
-  <link href='/style.css' rel='stylesheet'>
+  <meta charset="UTF-8">
+  <title>Haz tu consulta</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-  <h1>Hello, world!</h1>
-  <button onclick="console.log('hello');">Press me</button>
-  <script defer type="text/javascript" src="/main.js"></script>
+<body id="paginaInicio">
+  <div id="irConsultas">
+    <button class="botonSecundario" onclick="location.href='consultas.html'">Publicaciones</button>
+  </div>
+
+  <div id="contenedorInicio">
+    <h1 class="h1Inicio">HAZ TU CONSULTA</h1>
+    <form id="consultaForm">
+      <div class="campo">
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" placeholder="Ingresa tu nombre" required>
+      </div>
+      <div class="campo">
+        <label for="mensaje">Consulta</label>
+        <textarea id="mensaje" placeholder="Escribe tu consulta aquí..." required></textarea>
+      </div>
+      <button class="botonPrimario" type="submit">ENVIAR</button>
+    </form>
+  </div>
+
+  <script src="app.js"></script>
 </body>
 </html>
